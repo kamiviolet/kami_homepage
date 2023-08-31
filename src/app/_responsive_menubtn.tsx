@@ -1,3 +1,5 @@
+"use client";
+
 // import { turnBtnToCross } from "../utils/utils";
 import React from "react";
 

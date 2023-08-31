@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useContext } from "react";
 import { BsMoonStarsFill, BsMoonStars } from "react-icons/bs";
 // import { ThemeContext } from "../contexts/ThemeContext";

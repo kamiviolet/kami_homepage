@@ -1,7 +1,7 @@
 export type GallerySubsectionType = {
   name: string;
   description: string;
-  list: any[];
+  list: ThumbnailType[];
 };
 
 export type ThumbnailType = {

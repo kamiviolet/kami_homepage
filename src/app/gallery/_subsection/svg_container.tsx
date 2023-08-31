@@ -1,16 +1,13 @@
 import React from "react";
-import SVGContainer from "../svg_container";
-import svgList from "@/lib/constants/svg_collection";
+import SVGCard from "./svg_card";
+import { ThumbnailType } from "@/types/gallery_subsection.type";
 
-export default function SVGCollection() {
-  const { name, description, list } = svgList;
+export default function SVGContainer({ list }: { list: ThumbnailType[] }) {
   return (
-    <>
-      <h3>{name}</h3>
-      <p>{description}</p>
-      <div className="svgicons_wrapper">
-        <SVGContainer list={list} />
-      </div>
-    </>
+    <div className="svgicons_wrapper">
+      {list.map((icon, i) => (
+        <SVGCard icon={icon} key={icon.name + "_" + i} />
+      ))}
+    </div>
   );
 }

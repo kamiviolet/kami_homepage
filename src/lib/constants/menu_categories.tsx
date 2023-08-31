@@ -12,7 +12,7 @@ import MenuCategoryType from "@/types/menu_category.type";
 const categoryList: MenuCategoryType[] = [
   {
     target: "home",
-    link: "",
+    link: "/",
     icon: <BsFillHouseDoorFill />,
   },
   {
