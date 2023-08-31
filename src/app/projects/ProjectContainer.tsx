@@ -1,13 +1,18 @@
-import { BsGithub } from "react-icons/bs";
-import { Link } from "react-router-dom";
-import SKILLS from "../constants/Skills";
 import React from "react";
+import Link from "next/link";
+import { BsGithub } from "react-icons/bs";
+import ProjectType from "@/types/project.type";
+import TechStack from "./tech_stack";
 
-export default function ProjectContainer({ project }) {
+export default function ProjectContainer({
+  project,
+}: {
+  project: ProjectType;
+}) {
   return (
     <div className="project_container">
       <div className="project image">
-        <Link to={project.url.demo} target="_blank">
+        <Link href={project.url.demo} target="_blank">
           <img
             loading="lazy"
             src={"projects" + project.images.web}
@@ -20,21 +25,12 @@ export default function ProjectContainer({ project }) {
         <span className="key">Description:</span>
         <pre className="value">{project.description}</pre>
         <span className="key">Tools:</span>
-        <div className="value">
-          {project.tools
-            .split(", ")
-            .map((t) => {
-              return SKILLS.find((s) => s.name === t);
-            })
-            .map((t,i) => (
-              <img src={t.path} className="icon" alt={t.name} key={project.name+"_"+i+"_"+t} />
-            ))}
-        </div>
+        <TechStack tools={project.tools} name={project.name} />
         <div className="btn_wrapper">
-          <Link to={project.url.demo} target="_blank">
+          <Link href={project.url.demo} target="_blank">
             Live demo
           </Link>
-          <Link to={project.url.github} target="_blank">
+          <Link href={project.url.github} target="_blank">
             <BsGithub /> <span>Code</span>
           </Link>
         </div>
