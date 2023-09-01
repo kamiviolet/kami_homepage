@@ -1,4 +1,6 @@
 import React from "react";
+import projectList from "@/lib/constants/projects";
+import ProjectContainer from "./ProjectContainer";
 
 export default function Projects(): React.ReactNode {
   return (
@@ -10,9 +12,9 @@ export default function Projects(): React.ReactNode {
         little nest in Github :D
       </p>
       <div className="projects_wrapper">
-        {/* {PROJECTS.map((project, i) => {
+        {projectList.map((project, i) => {
           return <ProjectContainer key={project + "_" + i} project={project} />;
-        })} */}
+        })}
       </div>
     </section>
   );
