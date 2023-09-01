@@ -4,24 +4,32 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 154, 190, 241;
+  --background-end-rgb: 171, 197, 230;
+  --color-primary-4: #aa2abb;
+  --color-information: #5fcebf;
+  --color-highlight-dark: #ffad14e1;
+  --color-text-dark: #cecccc;
+  --color-highlight-light: #d86100;
+  --dark-foreground-rgb: 255, 255, 255;
+  --dark-background-start-rgb: 10, 32, 58;
+  --dark-background-end-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --background-start-rgb: 10, 32, 58;
     --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+[data-theme="dark"] body {
+  color: rgb(var(--dark-foreground-rgb));
+  background: rgb(var(--dark-background-start-rgb));
 }
