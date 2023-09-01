@@ -11,25 +11,19 @@
   --color-highlight-dark: #ffad14e1;
   --color-text-dark: #cecccc;
   --color-highlight-light: #d86100;
-  --dark-foreground-rgb: 255, 255, 255;
-  --dark-background-start-rgb: 10, 32, 58;
-  --dark-background-end-rgb: 0, 0, 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 10, 32, 58;
-    --background-end-rgb: 0, 0, 0;
-  }
+.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 32, 58;
+  --background-end-rgb: 0, 0, 0;
 }
 
 body {
+  display: grid;
+  grid-template-rows: 15vh auto auto auto;
+  place-items: center;
+  min-height: 100vh;
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-start-rgb));
-}
-
-[data-theme="dark"] body {
-  color: rgb(var(--dark-foreground-rgb));
-  background: rgb(var(--dark-background-start-rgb));
 }

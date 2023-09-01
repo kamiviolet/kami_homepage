@@ -6,7 +6,7 @@ import MenuItem from "./_menuitem";
 
 const styles = {
   menu_wrapper:
-    "absolute flex flex-col place-items-center top-0 left-0 w-full h-full overflow-y-auto pt-4 pe-8 z-3 md:flex-row md:justify-between md:items-center md:h-min ",
+    "absolute flex flex-col justify-center items-center top-0 left-0 w-full h-full overflow-y-auto pt-4 pe-8 z-10 md:flex-row md:justify-between md:items-center md:h-min",
   menu_container:
     "flex flex-col place-items-center text-center md:flex-row md:justify-between md:items-center md:h-min",
   menu_item: {
@@ -15,25 +15,24 @@ const styles = {
     menu_icon: "hidden md:block",
     menu_text: "flex place-items-center",
   },
+  toggle_container: "my-4 md:my-0 md:-translate-y-1 flex justify-center text-3xl"
 };
 
 export default function MenuWrapper(): React.ReactNode {
   return (
-    <>
-      <ul className={styles.menu_wrapper}>
-        <li>
-          <ul className={styles.menu_container}>
-            {categoryList.map((category: MenuCategoryType, i: number) => (
-              <li key={category.target + "_link_" + i}>
-                <MenuItem category={category} styles={styles.menu_item} />
-              </li>
-            ))}
-          </ul>
-        </li>
-        <li>
-          <ThemeToggler />
-        </li>
-      </ul>
-    </>
+    <ul className={styles.menu_wrapper}>
+      <li>
+        <ul className={styles.menu_container}>
+          {categoryList.map((category: MenuCategoryType, i: number) => (
+            <li key={category.target + "_link_" + i}>
+              <MenuItem category={category} styles={styles.menu_item} />
+            </li>
+          ))}
+        </ul>
+      </li>
+      <li>
+        <ThemeToggler styles={styles.toggle_container} />
+      </li>
+    </ul>
   );
 }
