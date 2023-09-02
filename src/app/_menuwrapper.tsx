@@ -15,7 +15,8 @@ const styles = {
     menu_icon: "hidden md:block",
     menu_text: "flex place-items-center",
   },
-  toggle_container: "my-4 md:my-0 md:-translate-y-1 flex justify-center text-3xl"
+  toggle_container:
+    "my-4 md:my-0 md:-translate-y-1 flex justify-center text-3xl",
 };
 
 export default function MenuWrapper(): React.ReactNode {

@@ -41,3 +41,9 @@ main {
 p {
   padding-block-end: 1.25em;
 }
+
+h2 {
+  font-weight: 600;
+  font-size: 1.75em;
+  padding-block: 1em;
+}

@@ -3,16 +3,15 @@ import skillList from "@/lib/constants/skills";
 import Header from "./_header";
 
 const styles = {
-  "self-intro": "",
-  skillset: "flex flex-wrap",
-  skillicon: "bg-white p-2 mx-2 rounded first-of-type:m-0 first-of-type:me-2 last-of-type:mx-0 last-of-type:ms-2"
+  skillset: "grid grid-cols-fill-50 gap-4 my-8",
+  skillicon: "bg-white p-2 rounded"
 }
 
 export default function Home() {
   return (
     <>
       <Header />
-      <section className={styles["self-intro"]}>
+      <section>
         <p>
           Here is my little vault to store my works and things that I like to
           share with you.
