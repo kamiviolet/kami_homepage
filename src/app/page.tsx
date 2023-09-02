@@ -1,11 +1,18 @@
+import Image from "next/image";
 import skillList from "@/lib/constants/skills";
 import Header from "./_header";
+
+const styles = {
+  "self-intro": "",
+  skillset: "flex flex-wrap",
+  skillicon: "bg-white p-2 mx-2 rounded first-of-type:m-0 first-of-type:me-2 last-of-type:mx-0 last-of-type:ms-2"
+}
 
 export default function Home() {
   return (
     <>
       <Header />
-      <section className="self-intro">
+      <section className={styles["self-intro"]}>
         <p>
           Here is my little vault to store my works and things that I like to
           share with you.
@@ -36,9 +43,9 @@ export default function Home() {
           help them to have a more comfortable life.
         </p>
         <p>My current skill set includes:</p>
-        <div className="icons">
+        <div className={styles.skillset}>
           {skillList.map((s, i) => (
-            <img key={s + "__" + i} src={s.path} alt={s.name} />
+            <Image key={s + "_list_" + i} className={styles.skillicon} src={s.path} alt={s.name} width={75} height={75} />
           ))}
         </div>
       </section>

@@ -4,7 +4,7 @@
 
 :root {
   --foreground: 0, 0, 0;
-  --background-start: 154, 190, 241;
+  --background-start: 190, 217, 255;
   --background-end: 171, 197, 230;
   --violet: 170, 42, 187;
   --information: 95, 206, 191;
@@ -29,4 +29,15 @@ body {
   min-height: 100vh;
   color: rgb(var(--foreground));
   background: rgb(var(--background-start));
+  transition: 300ms;
+}
+
+main {
+  display: grid;
+  max-width: 1280px;
+  padding: 3em;
+}
+
+p {
+  padding-block-end: 1.25em;
 }
