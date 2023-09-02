@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const styles = {
   menu_btn: "w-[45px] h-[45px] mx-6 z-30 cursor-pointer block md:hidden ",
@@ -15,27 +15,20 @@ export default function ResponsiveMenuBtn({
   onMenu: boolean;
   setOnMenu: (val: boolean | ((prevVal: boolean) => boolean)) => void;
 }) {
-  const [buttonPress, setbuttonPress] = useState(true);
-
   const turnBtnToCross = (): void => {
-    setbuttonPress((buttonPress) => !buttonPress);
     setOnMenu((onMenu) => !onMenu);
   };
 
   return (
     <div
-      className={onMenu ? styles.menu_btn + " fixed top-8 right-0" : styles.menu_btn}
-      onClick={() => {
-        turnBtnToCross();
-      }}
+      className={
+        onMenu ? styles.menu_btn + " fixed top-8 right-0" : styles.menu_btn
+      }
+      onClick={turnBtnToCross}
     >
-      <div
-        className={!buttonPress ? styles.bar : styles.bar + styles.top}
-      ></div>
-      <div className={!buttonPress ? styles.bar : styles.top}></div>
-      <div
-        className={!buttonPress ? styles.bar : styles.bar + styles.bottom}
-      ></div>
+      <div className={!onMenu ? styles.bar : styles.bar + styles.top}></div>
+      <div className={!onMenu ? styles.bar : styles.top}></div>
+      <div className={!onMenu ? styles.bar : styles.bar + styles.bottom}></div>
     </div>
   );
 }

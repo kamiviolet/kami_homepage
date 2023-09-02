@@ -4,11 +4,9 @@ import React from "react";
 import { BsMoonStarsFill, BsMoonStars } from "react-icons/bs";
 import { useTheme } from "next-themes";
 
-export default function ThemeToggler({
-  styles,
-}: {
-  styles: string;
-}): React.ReactNode {
+const styles = "my-4 md:my-0 md:-translate-y-1 flex justify-center text-3xl";
+
+export default function ThemeToggler(): React.ReactNode {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
