@@ -2,35 +2,20 @@
 
 import ResponsiveMenuBtn from "./_responsive_menubtn";
 import MenuWrapper from "./_menuwrapper";
-import React from "react";
+import React, { useState } from "react";
 
 const styles = {
   navbar:
-    "row-start-1 row-end-2 justify-self-end w-inherit grid justify-end top-0",
+    "row-start-1 row-end-2 w-full bg-background-end grid justify-end self-start py-4",
 };
 
 export default function Nav(): React.ReactNode {
-  const clickMenuItems = () => {
-    // const menuWrapper = document.querySelector(".menu_wrapper");
-    // const menuBtn = document.querySelector(".menu_btn");
-    //   if (e.target.classList.contains("menu_btn_bar") && menuWrapper.classList.contains("hidden")) {
-    //     menuWrapper.classList.remove("hidden");
-    //     menuBtn.classList.add('open')
-    //   }
-    //   else if (e.target.classList.contains("menu_btn_bar") && !menuWrapper.classList.contains("hidden")) {
-    //     menuWrapper.classList.add("hidden");
-    //     menuBtn.classList.remove('open')
-    //   }
-    //   else if (!menuWrapper.classList.contains("hidden")) {
-    //     menuWrapper.classList.add("hidden");
-    //     menuBtn.classList.remove('open')
-    //   }
-  };
+  const [onMenu, setOnMenu] = useState<boolean>(true);
 
   return (
-    <nav className={styles.navbar} onClick={(e) => clickMenuItems()}>
-      <ResponsiveMenuBtn />
-      <MenuWrapper />
+    <nav className={styles.navbar}>
+      <ResponsiveMenuBtn onMenu={onMenu} setOnMenu={setOnMenu} />
+      <MenuWrapper onMenu={onMenu} />
     </nav>
   );
 }

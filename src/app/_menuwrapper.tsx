@@ -6,7 +6,7 @@ import MenuItem from "./_menuitem";
 
 const styles = {
   menu_wrapper:
-    "bg-background-end dark:bg-background-end-dark absolute flex flex-col justify-center items-center top-0 left-0 w-full h-full overflow-y-auto pt-4 pe-8 z-10 md:flex-row md:justify-between md:items-center md:h-min",
+    "bg-background-end fixed flex flex-col justify-center items-center top-0 left-0 w-screen h-screen pt-4 md:pe-8 z-10 md:flex md:flex-row md:justify-between md:items-center md:h-min",
   menu_container:
     "flex flex-col place-items-center text-center md:flex-row md:justify-between md:items-center md:h-min",
   menu_item: {
@@ -16,12 +16,16 @@ const styles = {
     menu_text: "flex place-items-center",
   },
   toggle_container:
-    "my-4 md:my-0 md:-translate-y-1 flex justify-center text-3xl",
+    "my-4 md:my-0 md:-translate-y-4 flex justify-center text-3xl",
 };
 
-export default function MenuWrapper(): React.ReactNode {
+export default function MenuWrapper({
+  onMenu,
+}: {
+  onMenu: boolean;
+}): React.ReactNode {
   return (
-    <ul className={styles.menu_wrapper}>
+    <ul className={onMenu? styles.menu_wrapper:  styles.menu_wrapper + " hidden"}>
       <li>
         <ul className={styles.menu_container}>
           {categoryList.map((category: MenuCategoryType, i: number) => (

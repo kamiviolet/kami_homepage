@@ -1,4 +1,3 @@
-import { useTheme } from "next-themes";
 import React, { useState } from "react";
 
 const styles = {
@@ -9,17 +8,23 @@ const styles = {
   bottom: "origin-center -translate-y-2 -rotate-45 ",
 };
 
-export default function ResponsiveMenuBtn() {
+export default function ResponsiveMenuBtn({
+  setOnMenu,
+  onMenu,
+}: {
+  onMenu: boolean;
+  setOnMenu: (val: boolean | ((prevVal: boolean) => boolean)) => void;
+}) {
   const [buttonPress, setbuttonPress] = useState(true);
-  const { theme } = useTheme();
 
   const turnBtnToCross = (): void => {
     setbuttonPress((buttonPress) => !buttonPress);
+    setOnMenu((onMenu) => !onMenu);
   };
 
   return (
     <div
-      className={styles.menu_btn}
+      className={onMenu ? styles.menu_btn + " fixed top-8 right-0" : styles.menu_btn}
       onClick={() => {
         turnBtnToCross();
       }}

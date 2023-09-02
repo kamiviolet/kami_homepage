@@ -54,8 +54,8 @@ h2 {
   font-weight: 600;
   font-size: 2em;
   font-variant: small-caps;
-  padding-block-end: 1.5em;
-  border-bottom: 2px solid rgb(var(--highlight));
+  padding-block-end: 1em;
+  border-bottom: 4px solid rgb(var(--highlight));
   margin-bottom: 1em;
 }
 
@@ -81,7 +81,6 @@ a:focus {
 
 .cite {
   font-style: italic;
-  padding: 1em;
   width: 80%;
   background-color: rgba(255, 255, 255, 0.55);
   margin-block-end: 2em;
@@ -90,9 +89,9 @@ a:focus {
   border-radius: 5px;
 }
 
-.shape-outside {
+.uranus {
   float: right;
-  padding-inline-start: 2em;
+  padding-inline-start: 2.5em;
   margin: 2.5em;
-  shape-outside: url("/lazy_uranus.svg");
+  shape-outside: circle(50%);
 }
