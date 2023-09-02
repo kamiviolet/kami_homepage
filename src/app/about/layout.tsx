@@ -7,7 +7,7 @@ export default function AboutLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="grid md:grid-cols-[auto_275px] gap-8">
+    <div className="grid md:grid-cols-[auto_275px] gap-14">
       {children}
       <SideBar />
     </div>

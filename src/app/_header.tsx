@@ -2,7 +2,7 @@ import React from "react";
 
 const styles = {
   header:
-    "justify-self-center grid place-items-center gap-8 mt-4 mb-12 md:grid-cols-[auto_minmax(250px,400px)]",
+    "justify-self-center grid place-items-center gap-14 mt-4 mb-12 md:grid-cols-[auto_minmax(250px,400px)]",
   description: "md:col-start-1 text-xl",
   "my-name": "text-6xl font-bold py-8",
   logo: "md:col-start-2",

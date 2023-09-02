@@ -38,12 +38,22 @@ main {
   padding: 3em;
 }
 
+section {
+  margin-block-end: 2.5em;
+}
+
 p {
   padding-block-end: 1.25em;
 }
 
 h2 {
   font-weight: 600;
-  font-size: 1.75em;
-  padding-block: 1em;
+  font-size: 2em;
+  padding-block-end: 1em;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5em;
+  padding-block-end: 1em;
 }
