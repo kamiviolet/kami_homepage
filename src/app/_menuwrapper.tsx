@@ -6,7 +6,7 @@ import MenuItem from "./_menuitem";
 
 const styles = {
   menu_wrapper:
-    "absolute flex flex-col justify-center items-center top-0 left-0 w-full h-full overflow-y-auto pt-4 pe-8 z-10 md:flex-row md:justify-between md:items-center md:h-min",
+    "bg-background-end dark:bg-background-end-dark absolute flex flex-col justify-center items-center top-0 left-0 w-full h-full overflow-y-auto pt-4 pe-8 z-10 md:flex-row md:justify-between md:items-center md:h-min",
   menu_container:
     "flex flex-col place-items-center text-center md:flex-row md:justify-between md:items-center md:h-min",
   menu_item: {
