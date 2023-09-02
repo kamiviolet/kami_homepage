@@ -1,17 +1,16 @@
 export default function MyBackground() {
   return (
-    <section>
+    <section className="grid">
       <h2>Background</h2>
       <p className="cite">
-        <em>
-          The internet should have been much better than in the past, with more
-          stable connection, reliable security, faster speed, and mainly
-          everything affordable for everyone, but somehow I feel something
-          precious is missing when it was here in the past, when everyone was
-          amateur but passionate, creating homepage in the web to share their
-          interests, and put a piece of themselves into it, not for job
-          opportunities, or business.
-        </em>
+        The internet should have been much better than in the past, with more
+        stable connection, reliable security, faster speed, and mainly
+        everything affordable for everyone, but somehow, something
+        precious is missing... or rather to say, buried, when it was there in the
+        past, the time when everyone was amateur but passionate, creating homepage in the
+        web to share their interests, and put a piece of themselves into it, not
+        for job opportunities, or business. It is not lost and it can be found again
+        by collective participation and exploration, and I wish to join the force.
       </p>
       <p>
         Being one of the nerds at school, I was always grateful for the

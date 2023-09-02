@@ -1,7 +1,7 @@
 import Figure from "@/components/Figure";
 
 const styles = {
-  sidebar: "bg-gray-700 grid grid-cols-fill-150 justify-center md:grid-cols-1fr md:px-4 md:py-6 ",
+  sidebar: "dark:bg-gray-700 bg-gray-300 grid grid-cols-fill-150 justify-center md:grid-cols-1fr md:px-4 md:py-6 ",
   image: "mx-4 my-4 md:mx-0 first-of-type:my-0 first-of-type:mb-4"
 }
 

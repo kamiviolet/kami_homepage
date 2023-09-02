@@ -10,9 +10,9 @@ export default function SVGContainer({
   styles?: any;
 }) {
   return (
-    <div className={styles["svg-container"]}>
+    <div className={styles.svg_container}>
       {list.map((icon, i) => (
-        <SVGCard icon={icon} styles={styles["svg-icon"]} key={icon.name + "_" + i} />
+        <SVGCard icon={icon} styles={styles.svg_icon} key={icon.name + "_" + i} />
       ))}
     </div>
   );

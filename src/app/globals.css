@@ -6,20 +6,23 @@
   --foreground: 0, 0, 0;
   --background-start: 190, 217, 255;
   --background-end: 171, 197, 230;
+  --background-mid: 171, 197, 230;
   --violet: 170, 42, 187;
   --information: 95, 206, 191;
-  --highlight-dark: 255, 173, 20;
-  --text-dark: 206, 204, 204;
-  --highlight-light: 216, 97, 0;
-  --foreground-dark: 255, 255, 255;
-  --background-start-dark: 10, 32, 58;
-  --background-end-dark: 0, 0, 0;
+  --text: 0, 0, 0;
+  --highlight-bg: 255, 173, 20;
+  --highlight: 197, 94, 10;
 }
 
 .dark {
+  --text: 255, 255, 255;
   --foreground: 255, 255, 255;
   --background-start: 10, 32, 58;
   --background-end: 0, 0, 0;
+  --background-mid: 50, 50, 53;
+  --highlight-bg: 197, 94, 10;
+  --highlight: 255, 173, 20;
+  --information: 55, 119, 111;
 }
 
 body {
@@ -34,6 +37,7 @@ body {
 
 main {
   display: grid;
+  width: 100%;
   max-width: 1280px;
   padding: 3em;
 }
@@ -43,17 +47,52 @@ section {
 }
 
 p {
-  padding-block-end: 1.25em;
+  padding-block-end: 1.5em;
 }
 
 h2 {
   font-weight: 600;
   font-size: 2em;
-  padding-block-end: 1em;
+  font-variant: small-caps;
+  padding-block-end: 1.5em;
+  border-bottom: 2px solid rgb(var(--highlight));
+  margin-bottom: 1em;
 }
 
 h3 {
   font-weight: 600;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  padding-block-end: 1.5em;
+}
+
+em {
+  font-weight: 600;
   font-size: 1.5em;
+  font-style: unset;
   padding-block-end: 1em;
+  display: block;
+}
+
+a:hover,
+a:focus {
+  color: rgb(var(--highlight));
+}
+
+.cite {
+  font-style: italic;
+  padding: 1em;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.55);
+  margin-block-end: 2em;
+  justify-self: center;
+  color: black;
+  border-radius: 5px;
+}
+
+.shape-outside {
+  float: right;
+  padding-inline-start: 2em;
+  margin: 2.5em;
+  shape-outside: url("/lazy_uranus.svg");
 }
