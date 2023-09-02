@@ -4,7 +4,7 @@ const projectList: ProjectType[] = [
   {
     name: "Cookiess! Forum",
     description: `Migration of Ubiquitous Biscuit, a Reddit mock. Implemented Supabase Auth to authenticate user via either JWT/OAuth, with captcha protection from hCaptcha. Leveraged RLS in PSQL to level up the security. `,
-    tools: "TypeScript, Next, Tailwind CSS",
+    tools: "TypeScript, Next, PostgreSQL, Tailwind CSS",
     images: {
       web: "/cookiess_forum.png",
     },
@@ -37,18 +37,18 @@ const projectList: ProjectType[] = [
       github: "https://github.com/kamiviolet/filmians",
     },
   },
-  // {
-  //     name: "FurryTail",
-  //     description: `A mini project to search for different cat breeds and get overwhelmed by their cuteness.`,
-  //     tools: "TypeScript, React, Next",
-  //     images: {
-  //         web: '/furrytail_dark.png',
-  //     },
-  //     url: {
-  //         demo: 'https://furrytail.vercel.app/',
-  //         github: 'https://github.com/kamiviolet/furrytail'
-  //     }
-  // },
+  {
+    name: "FurryTail",
+    description: `A mini project to search for different cat breeds and get overwhelmed by their cuteness.`,
+    tools: "TypeScript, React, Next",
+    images: {
+      web: "/furrytail_dark.png",
+    },
+    url: {
+      demo: "https://furrytail.vercel.app/",
+      github: "https://github.com/kamiviolet/furrytail",
+    },
+  },
   {
     name: "Weathering",
     description: `A mini project for checking weather in current location or anywhere from the world.`,

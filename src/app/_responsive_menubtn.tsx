@@ -1,14 +1,34 @@
-"use client";
-
-// import { turnBtnToCross } from "../utils/utils";
 import React from "react";
 
-export default function ResponsiveMenuBtn(): React.ReactNode {
+const styles = {
+  menu_btn: "w-[45px] h-[45px] mx-6 z-30 cursor-pointer block md:hidden ",
+  bar: "bg-black dark:bg-white rounded w-full h-[5px] mt-3 transition-[300ms] first-of-type:mt-0 ",
+  top: "origin-center translate-y-2  rotate-45 ",
+  mid: "hidden ",
+  bottom: "origin-center -translate-y-2 -rotate-45 ",
+};
+
+export default function ResponsiveMenuBtn({
+  setOnMenu,
+  onMenu,
+}: {
+  onMenu: boolean;
+  setOnMenu: (val: boolean | ((prevVal: boolean) => boolean)) => void;
+}) {
+  const turnBtnToCross = (): void => {
+    setOnMenu((onMenu) => !onMenu);
+  };
+
   return (
-    <div className="menu_btn menu_btn_bar" onClick={(e) => {}}>
-      <div className="bar menu_btn_bar bar_1"></div>
-      <div className="bar menu_btn_bar bar_2"></div>
-      <div className="bar menu_btn_bar bar_3"></div>
+    <div
+      className={
+        onMenu ? styles.menu_btn + " fixed top-8 right-0" : styles.menu_btn
+      }
+      onClick={turnBtnToCross}
+    >
+      <div className={!onMenu ? styles.bar : styles.bar + styles.top}></div>
+      <div className={!onMenu ? styles.bar : styles.top}></div>
+      <div className={!onMenu ? styles.bar : styles.bar + styles.bottom}></div>
     </div>
   );
 }

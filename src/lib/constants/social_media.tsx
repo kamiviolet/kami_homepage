@@ -6,24 +6,19 @@ import SocialMediaType from "@/types/socialmedia.type";
 
 const socialmediaList: SocialMediaType[] = [
   {
-    name: "@in/uranus-vibe",
-    path: "https://www.linkedin.com/in/uranus-vibe",
-    icon: <BsLinkedin />,
-  },
-  {
     name: "@kamiviolet",
     path: "https://github.com/kamiviolet/",
     icon: <BsGithub />,
   },
   {
+    name: "@in/kamiviolet",
+    path: "https://www.linkedin.com/in/kamiviolet",
+    icon: <BsLinkedin />,
+  },
+  {
     name: "@kamiviolet",
     path: "https://medium.com/@kamiviolet",
     icon: <FaMedium />,
-  },
-  {
-    name: "@kami-lam",
-    path: "https://codepen.io/kami-lam",
-    icon: <FaCodepen />,
   },
   {
     name: "@kamiviolet",

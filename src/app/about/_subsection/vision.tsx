@@ -16,7 +16,7 @@ export default function MyVision() {
         into this vast boundaryless community.
       </p>
       <p>
-        Ultimately, I wish to encourage everyone to join me, to embrace the
+        Ultimately, I wish to encourage everyone to join with me, to embrace the
         internet which should belong to everyone, to express themselves and
         creativity.
       </p>
