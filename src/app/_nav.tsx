@@ -7,6 +7,7 @@ import React, { useState } from "react";
 const styles = {
   navbar:
     "row-start-1 row-end-2 w-full bg-background-end grid justify-end self-start py-4 z-20",
+  miniLogo: "text-2xl font-bold absolute left-0 mx-6 my-1 md:hidden"
 };
 
 export default function Nav(): React.ReactNode {
@@ -14,7 +15,7 @@ export default function Nav(): React.ReactNode {
 
   return (
     <nav className={styles.navbar}>
-      <p className="text-2xl absolute left-0 mx-6 my-1 md:hidden">Kami Lam</p>
+      <p className={styles.miniLogo}>Kami Lam</p>
       <ResponsiveMenuBtn onMenu={onMenu} setOnMenu={setOnMenu} />
       <MenuWrapper onMenu={onMenu}  setOnMenu={setOnMenu} />
     </nav>
