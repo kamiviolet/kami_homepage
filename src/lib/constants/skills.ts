@@ -30,8 +30,8 @@ const skillList: SkillType[] = [
     path: "/devicons/jest-plain.svg",
   },
   {
-    name: "mocha",
-    path: "/devicons/mocha-plain.svg",
+    name: "cypress",
+    path: "/devicons/cypress.svg",
   },
   {
     name: "Git",

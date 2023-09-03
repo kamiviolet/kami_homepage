@@ -6,7 +6,7 @@ export default function MySkills() {
       <h2>Skills</h2>
       <ul>
         {skillList.map((s, i) => (
-          <li key={s + "_list_" + i}>{s.name}</li>
+          <li className="capitalize" key={s + "_list_" + i}>{s.name}</li>
         ))}
       </ul>
     </section>

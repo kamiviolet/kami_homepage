@@ -2,10 +2,10 @@ import React from "react";
 
 const styles = {
   menu_btn: "w-[45px] h-[45px] mx-6 z-30 cursor-pointer block md:hidden ",
-  bar: "bg-black dark:bg-white rounded w-full h-[5px] mt-3 transition-[300ms] first-of-type:mt-0 ",
-  top: "origin-center translate-y-2  rotate-45 ",
+  bar: "bg-black dark:bg-white rounded w-full h-[5px] mt-3 transition-[300ms] first-of-type:mt-0 translate-y-1 ",
+  top: "origin-center translate-y-1  rotate-45 ",
   mid: "hidden ",
-  bottom: "origin-center -translate-y-2 -rotate-45 ",
+  bottom: "origin-center -translate-y-3 -rotate-45 ",
 };
 
 export default function ResponsiveMenuBtn({

@@ -14,6 +14,7 @@ export default function Nav(): React.ReactNode {
 
   return (
     <nav className={styles.navbar}>
+      <p className="text-2xl absolute left-0 mx-6 my-1 md:hidden">Kami Lam</p>
       <ResponsiveMenuBtn onMenu={onMenu} setOnMenu={setOnMenu} />
       <MenuWrapper onMenu={onMenu}  setOnMenu={setOnMenu} />
     </nav>
