@@ -1,9 +1,10 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Figure({
   src,
   caption,
-  styles
+  styles,
 }: {
   src: string;
   caption: string;
@@ -11,7 +12,7 @@ export default function Figure({
 }) {
   return (
     <figure className={styles}>
-      <img src={src} alt={caption} />
+      <Image src={src} alt={caption} width="350" height="400" quality={80} />
       <figcaption>{caption}</figcaption>
     </figure>
   );
