@@ -6,7 +6,7 @@ const styles = {
   svg_wrapper: "w-inherit",
   svg_container: {
     svg_container: "w-inherit grid gap-4 grid-cols-fill-50 place-items-center",
-    svg_icon: "bg-white p-2 rounded ",
+    svg_icon: "bg-white p-2 rounded w-[75px] h-[75px]",
   },
 };
 
