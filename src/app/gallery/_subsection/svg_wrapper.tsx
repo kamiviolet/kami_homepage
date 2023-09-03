@@ -14,21 +14,20 @@ export default function SVGCollection({
   const styles = {
     svg_wrapper: "w-inherit",
     svg_container: {
-      svg_container: "w-inherit grid gap-4 place-items-center ",
-      svg_icon: `bg-white p-2 rounded `,
+      svg_container: `w-inherit grid gap-4 place-items-stretch auto-rows-[${size}px]`,
+      svg_icon: `bg-white p-2 rounded w-[${size}px] h-[${size}px]`,
     },
   };
 
-  const gridSize = size <= 150 ? " grid-cols-fill-50" : " grid-cols-fill-250";
+  const gridSize = size < 150 ? " grid-cols-fill-50" : " grid-cols-fill-250";
 
   styles.svg_container.svg_container += gridSize;
-  styles.svg_container.svg_icon += `w-[${size}px] h-[${size}px]`;
 
   return (
     <section className={styles.svg_wrapper}>
       <h3>{name}</h3>
       <p>{description}</p>
-      <SVGContainer list={list} styles={styles.svg_container} />
+      <SVGContainer list={list} styles={styles.svg_container} size={size} />
     </section>
   );
 }

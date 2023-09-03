@@ -7,7 +7,7 @@ export default function Gallery() {
   return (
     <>
       <h2>SVG Collection</h2>
-      <SVGCollection svgList={svgList} />
+      <SVGCollection svgList={svgList}  size={75} />
       <SVGCollection svgList={miscList} size={300} />
     </>
   );
