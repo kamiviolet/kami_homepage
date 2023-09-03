@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="2560"
+   height="1440"
+   viewBox="0 0 2560 1440"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="omikuji.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.7236796"
+     inkscape:cx="1084.7342"
+     inkscape:cy="756.55028"
+     inkscape:window-width="1242"
+     inkscape:window-height="985"
+     inkscape:window-x="380"
+     inkscape:window-y="1"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="66.442748 : 317.43511 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="2626.4427 : 317.43511 : 1"
+       inkscape:persp3d-origin="1346.4427 : 77.435115 : 1"
+       id="perspective1854" />
+    <rect
+       x="1151.0619"
+       y="614.91301"
+       width="98.109716"
+       height="479.49397"
+       id="rect1356" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#d45500;stroke-width:1.2113"
+       id="rect684-9-3"
+       width="105.10657"
+       height="538.00024"
+       x="1003.0047"
+       y="1544.4276"
+       ry="0"
+       transform="matrix(0.54765119,-0.83670674,0.41566967,0.90951565,0,0)" />
+    <rect
+       style="fill:#552200;stroke-width:1.21015"
+       id="rect684-9"
+       width="104.61661"
+       height="539.49756"
+       x="-792.30804"
+       y="582.02069"
+       ry="0"
+       transform="matrix(-0.99032345,-0.13877846,0.41511076,0.90977088,0,0)" />
+    <rect
+       style="fill:#803300;stroke-width:1.2465"
+       id="rect864"
+       width="182.36269"
+       height="539.02777"
+       x="666.60895"
+       y="1008.7589"
+       transform="rotate(-24.543802)" />
+    <path
+       sodipodi:type="star"
+       style="fill:#aa4400"
+       id="path868"
+       inkscape:flatsided="true"
+       sodipodi:sides="6"
+       sodipodi:cx="1162.8074"
+       sodipodi:cy="457.38474"
+       sodipodi:r1="57.349983"
+       sodipodi:r2="57.444588"
+       sodipodi:arg1="-3.129545"
+       sodipodi:arg2="-2.6059463"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 1105.4616,456.69382 29.2712,-49.31748 57.3458,0.69092 28.0746,50.00839 -29.2713,49.31748 -57.3458,-0.69091 z"
+       transform="matrix(2.8495404,-1.3012421,0.59398633,1.0714492,-2500.0532,1574.9428)" />
+    <ellipse
+       style="fill:#28170b"
+       id="path1293"
+       cx="830.09149"
+       cy="950.24298"
+       rx="42.992367"
+       ry="27.847328"
+       transform="rotate(-24.543802)" />
+    <text
+       xml:space="preserve"
+       style="font-size:119.367px;writing-mode:tb-rl;fill:#241f1c;stroke-width:1.59867"
+       x="703.83868"
+       y="1134.0331"
+       id="text1518"
+       transform="matrix(0.97744702,-0.44635103,0.3865743,0.84654426,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan1516"
+         x="703.83868"
+         y="1134.0331"
+         style="stroke-width:1.59867">おみくじ</tspan></text>
+    <path
+       id="rect1698"
+       style="fill:#c87137;stroke-width:0.991357"
+       d="m 963.67507,315.72905 c -6.52612,5.16545 -8.52896,12.75316 -4.489,17.01292 l 115.55723,121.84305 c 28.6086,30.16496 58.2536,59.98436 86.8623,90.14922 4.7803,-1.89613 8.464,-3.68796 12.7897,-7.40275 2.7309,-2.28718 6.5495,-4.822 9.7335,-9.86285 -28.6088,-30.16479 -57.2174,-61.36613 -85.826,-91.53108 L 982.74571,314.09453 c -4.03996,-4.25977 -12.54462,-3.53083 -19.07064,1.63452 z"
+       sodipodi:nodetypes="scccccccs" />
+  </g>
+</svg>
