@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const styles = {
-  header: "justify-self-center gap-14 mt-4 mb-12",
+  header: "justify-self-center gap-14 mb-12",
   "my-name": "text-6xl font-bold py-8 pe-4",
 };
 
