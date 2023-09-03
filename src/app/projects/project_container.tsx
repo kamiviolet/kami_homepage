@@ -21,7 +21,7 @@ export default function ProjectContainer({
         <Link href={project.url.demo} target="_blank">
           <Image
             loading="lazy"
-            src={"/projects" + project.images.web}
+            src={"/projects" + project.image}
             alt={project.name}
             className="thumbnail web_thumbnail"
             width="350"

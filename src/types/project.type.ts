@@ -2,9 +2,7 @@ type ProjectType = {
   name: string;
   description: string;
   tools: string;
-  images: {
-    web: string;
-  };
+  image: string;
   url: {
     demo: string;
     github: string;
