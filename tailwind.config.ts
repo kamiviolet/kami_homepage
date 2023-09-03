@@ -35,6 +35,7 @@ const config: Config = {
         "fill-50": "repeat(auto-fill, 75px)",
         "fill-100": "repeat(auto-fill, 150px)",
         "fill-150": "repeat(auto-fill, 225px)",
+        "fill-250": "repeat(auto-fill, 400px)",
       },
     },
   },

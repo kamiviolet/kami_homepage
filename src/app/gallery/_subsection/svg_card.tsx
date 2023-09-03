@@ -12,8 +12,8 @@ export default function SVGCard({
       loading="lazy"
       src={icon.file}
       alt={icon.name}
-      width="75"
-      height="75"
+      width="400"
+      height="350"
       className={styles}
     />
   );
