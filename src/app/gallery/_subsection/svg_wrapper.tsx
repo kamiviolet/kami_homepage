@@ -29,7 +29,7 @@ export default function SVGCollection({
     svg_container.svg_icon += ` w-[75px] h-[75px]`;
   } else if (size && size >= 100) {
     svg_container.svg_container += `grid-cols-fill-250 `;
-    svg_container.svg_icon += ` w-[375px] h-[250px]`;
+    svg_container.svg_icon += ` w-[350px] h-[250px]`;
   }
 
   return (
