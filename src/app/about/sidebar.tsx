@@ -2,7 +2,7 @@ import Figure from "@/components/Figure";
 
 const styles = {
   sidebar: "dark:bg-gray-700 bg-gray-300 grid grid-cols-fill-150 justify-center md:grid-cols-1fr md:px-4 md:py-6 auto-rows-min",
-  image: "mx-4 my-4 md:mx-0 first-of-type:my-0 first-of-type:mb-4"
+  image: "mx-4 my-4 md:mx-0"
 }
 
 export default function SideBar() {
