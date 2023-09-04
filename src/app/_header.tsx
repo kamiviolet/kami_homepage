@@ -24,19 +24,15 @@ export default function Header(): React.ReactNode {
       </p>
       <p>It is my portfolio but more than just a portfolio.</p>
       <p>
-        Everyone has their own unique story to tell and I think mine is pretty
-        interesting.
+        Everyone has their own unique story to tell and I am sharing mine here.
       </p>
       <p>
         Born in Hong Kong, having the second family in Tokyo Japan, currently
-        based in London UK, I am a web developer embracing various culture,
-        taking a people-centric approach.
-      </p>
-      <p>
-        From my early age, I have been interested in science, a subject combined
-        logic, creativity and practicality, however I ended up in humanities for
-        higher education. From sociology to psychoanalysis, it equipped me with
-        a better understanding about people and society.
+        based in London UK, from my early age, I have been interested in
+        science, a subject combined logic, creativity and practicality, however
+        I ended up in humanities for higher education. From sociology to
+        psychoanalysis, it equipped me with a better understanding about people
+        and society.
       </p>
       <p>
         Eager to learn more about the real world, I took up the challenge of
@@ -46,8 +42,7 @@ export default function Header(): React.ReactNode {
       </p>
       <p>
         I build things on the web, and I am determined not just things I will
-        build, but things that can help people to connect with each other, to
-        help them to have a more comfortable life.
+        build, but things that can help people to connect with each other.
       </p>
     </header>
   );
