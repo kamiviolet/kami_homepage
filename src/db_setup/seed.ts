@@ -1,17 +1,21 @@
 import mongoose from "mongoose";
 import connectDB from "./connection";
-import Post from "./models/post.model";
-import Tag from "./models/tag.model";
+import PostModel from "./models/post.model";
+import ProjectModel from "./models/project.model";
+import TagModel from "./models/tag.model";
 import rawPosts from "./data/posts.json";
 import rawTags from "./data/tags.json";
+import rawProjects from "./data/projects.json";
 import PostType from "@/types/post.type";
 import TagType from "@/types/tag.type";
+import ProjectType from "@/types/project.type";
 
 connectDB();
 
 const seedDB = async (): Promise<void> => {
-  await Post.deleteMany({});
-  await Tag.deleteMany({});
+  await PostModel.deleteMany({});
+  await TagModel.deleteMany({});
+  await ProjectModel.deleteMany({});
 
   const formattedPosts = rawPosts.map((p: PostType) => {
     return { ...p, _id: new mongoose.mongo.ObjectId() };
@@ -21,8 +25,13 @@ const seedDB = async (): Promise<void> => {
     return { ...t, _id: new mongoose.mongo.ObjectId() };
   });
 
-  await Post.insertMany({ formattedPosts });
-  await Tag.insertMany({ formattedTags });
+  const formattedProjects = rawProjects.map((t: ProjectType) => {
+    return { ...t, _id: new mongoose.mongo.ObjectId() };
+  });
+
+  await PostModel.insertMany(formattedPosts);
+  await TagModel.insertMany(formattedTags);
+  await ProjectModel.insertMany(formattedProjects);
 };
 
 seedDB().then(() => mongoose.disconnect());

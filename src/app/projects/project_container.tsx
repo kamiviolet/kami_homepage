@@ -35,7 +35,7 @@ export default function ProjectContainer({
         <p>{project.description}</p>
         <p className={styles.key}>Tools</p>
         <div className={`${styles.skillset}`}>
-          <TechStack tools={project.tools} name={project.name} />
+          <TechStack tools={project.tools[0]} name={project.name} />
         </div>
         <BtnWrapper demo={project.url.demo} code={project.url.github} />
       </div>

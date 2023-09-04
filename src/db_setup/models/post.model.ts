@@ -19,6 +19,6 @@ const PostSchema = new Schema({
   tags: [{ type: String }],
 });
 
-const PostModel = mongoose.model("Post", PostSchema);
+const PostModel = mongoose.model("Posts", PostSchema);
 
 export default PostModel;

@@ -1,3 +1,4 @@
+import * as fs from "fs/promises";
 import ProjectType from "@/types/project.type";
 
 const projectList: ProjectType[] = [
@@ -63,4 +64,11 @@ const projectList: ProjectType[] = [
   },
 ];
 
-export default projectList;
+const formattedProjects = JSON.stringify(projectList, null, 4);
+
+try {
+  fs.writeFile("./src/db_setup/data/projects.json", formattedProjects);
+  console.log("File created successfully.");
+} catch (error: unknown) {
+  console.error(error);
+}
