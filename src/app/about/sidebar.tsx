@@ -35,7 +35,7 @@ export default function SideBar() {
       <Link
         href="https://kamiviolet.github.io/tribute_page/"
         target="_blank"
-        className="text-center shadow bg-red-200 my-4 p-2 hover:text-white hover:bg-red-400 flex justify-center items-center"
+        className="text-center shadow bg-red-200 my-4 p-2 text-black hover:text-white hover:bg-red-400 flex justify-center items-center"
       >
         Tribute to my sister<IoMdOpen />
       </Link>
