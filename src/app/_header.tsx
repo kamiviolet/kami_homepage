@@ -11,6 +11,7 @@ export default function Header(): React.ReactNode {
     <header className={styles.header}>
       <p className="text-xl">Welcome to my homepage,</p>{" "}
       <Image
+        loading="lazy"
         src="/lazy_uranus.svg"
         alt="kami's logo: lazy uranus"
         width="400"
