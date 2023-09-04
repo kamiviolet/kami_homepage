@@ -26,6 +26,10 @@ const skillList: SkillType[] = [
     path: "/devicons/nextjs-original-wordmark.svg",
   },
   {
+    name: "MongoDB",
+    path: "/devicons/mongodb-original.svg",
+  },
+  {
     name: "jest",
     path: "/devicons/jest-plain.svg",
   },
