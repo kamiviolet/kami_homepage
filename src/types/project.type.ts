@@ -1,7 +1,7 @@
 type ProjectType = {
   name: string;
   description: string;
-  tools: string;
+  tools: string[];
   image: string;
   url: {
     demo: string;

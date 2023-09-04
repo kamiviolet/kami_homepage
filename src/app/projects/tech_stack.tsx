@@ -6,15 +6,14 @@ export default function TechStack({
   tools,
   name,
 }: {
-  tools: string;
+  tools: string[];
   name: string;
 }) {
-  const techStack: string[] = tools.split(", ");
-  const retrievedTechStack: any = techStack.map((t: string) =>
+  const retrievedTechStack = tools.map((t: string) =>
     skillList.find((s) => s.name === t)
   );
 
-  return retrievedTechStack.map((t: SkillType, i: number) => {
+  return retrievedTechStack.map((t, i) => {
     if (t) {
       return <SkillIcon s={t} key={name + "_" + i + "_" + t} />;
     }

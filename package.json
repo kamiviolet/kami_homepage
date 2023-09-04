@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "cypress:open": "cypress open",
-    "seed:init": "ts-node ./src/db_setup/seed.ts"
+    "seed:init": "ts-node ./src/db_setup/seed.ts",
+    "seed:format": "ts-node ./src/db_setup/data/projects.ts ./src/db_setup/data/posts.ts ./src/db_setup/data/tags.ts "
   },
   "dependencies": {
     "@types/node": "20.5.7",
