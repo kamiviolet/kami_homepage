@@ -20,7 +20,7 @@ export default function MyBackground() {
         2000s, I hosted my first homepage in Geocities JP. It was fun to play
         with various themes and designs for my homepage.
       </p>
-      <p>That was old story though.</p>
+      <p>That was an old story though.</p>
       <p>
         Despite my passion about science, I am also fascinated by history and
         ended up in humanities. I studied Religious studies and Philosophy for
