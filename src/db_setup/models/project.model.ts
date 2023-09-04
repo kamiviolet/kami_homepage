@@ -15,7 +15,7 @@ const ProjectScheme = new Schema({
     type: [String],
     require: true,
   },
-  images: {
+  image: {
     type: String,
     require: true,
   },
