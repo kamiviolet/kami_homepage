@@ -42,10 +42,6 @@ const skillList: SkillType[] = [
     path: "/devicons/git-original.svg",
   },
   {
-    name: "CSS",
-    path: "/devicons/css3-original.svg",
-  },
-  {
     name: "SASS",
     path: "/devicons/sass-original.svg",
   },
