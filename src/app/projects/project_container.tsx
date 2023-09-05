@@ -17,7 +17,7 @@ export default function ProjectContainer({
 }) {
   return (
     <>
-      <div className="shadow">
+      <div>
         <Link href={project.url.demo} target="_blank">
           <Image
             loading="lazy"
