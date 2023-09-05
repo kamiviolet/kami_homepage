@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import { Providers } from "./themeProvider";
 import Footer from "./_footer";
 import Nav from "./_nav";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,31 +12,38 @@ export const metadata: Metadata = {
   title: "Kami's Hompage",
   description:
     "The collection of my application projects, my illustrations, and articles. My portfolio as developer. My personal stash for the treasures I gathered in this adventurous life.",
-    generator: "Next.js",
-    creator: "Kami Lam",
-    keywords: ["homepage", "portfolio", "web developer", "software engineer", "tech writer", "personal"],
-    category: 'technology',
-    openGraph: {
-      images: '/preview.png',
+  generator: "Next.js",
+  creator: "Kami Lam",
+  keywords: [
+    "homepage",
+    "portfolio",
+    "web developer",
+    "software engineer",
+    "tech writer",
+    "personal",
+  ],
+  category: "technology",
+  openGraph: {
+    images: "/preview.png",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
-    viewport: {
-      width: 'device-width',
-      initialScale: 1,
-      maximumScale: 1,
-    },
-    robots: {
-      index: false,
-      follow: true,
-      nocache: true,
-      googleBot: {
-        index: true,
-        follow: false,
-        noimageindex: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
+  },
 };
 
 export default function RootLayout({

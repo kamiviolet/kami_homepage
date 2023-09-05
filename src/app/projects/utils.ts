@@ -5,6 +5,6 @@ import { NextResponse } from "next/server";
 connectDB();
 
 export async function fetchAllProjectsFromDb() {
-  const allProjects = await ProjectModel.find();
+  const allProjects = await ProjectModel.find().sort({ projectsId: -1 });
   return allProjects;
 }
