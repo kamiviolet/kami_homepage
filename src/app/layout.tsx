@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { Providers } from "./themeProvider";
 import Footer from "./_footer";
 import Nav from "./_nav";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -53,7 +54,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={inter.className}>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-96JBWREHLH" />
+      <Script dangerouslySetInnerHTML={{
+        __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-96JBWREHLH')`
+      }} />
+        <body className={inter.className}>
         <Providers>
           <Nav />
           <main>{children}</main>
