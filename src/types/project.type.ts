@@ -4,8 +4,8 @@ type ProjectType = {
   tools: string[];
   image: string;
   url: {
-    demo: string;
-    github: string;
+    demo?: string;
+    github?: string;
   };
 };
 

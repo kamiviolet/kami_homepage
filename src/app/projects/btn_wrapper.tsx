@@ -11,20 +11,27 @@ export default function BtnWrapper({
 }): React.ReactNode {
   return (
     <div className="flex">
-      <ProjectButton
-        link={demo}
-        styles="bg-information hover:text-text hover:bg-highlight-bg"
-        innerText="Live Demo"
-      >
-        <IoMdOpen />
-      </ProjectButton>
-      <ProjectButton
-        link={code}
-        styles="bg-background-mid hover:text-text hover:bg-highlight-bg"
-        innerText="Code"
-      >
-        <BsGithub />
-      </ProjectButton>
+      {
+        (demo) ? (
+            <ProjectButton
+            link={demo}
+            styles="bg-information hover:text-text hover:bg-highlight-bg"
+            innerText="Live Demo"
+            >
+              <IoMdOpen />
+            </ProjectButton>
+        ) : <></>
+      }{
+        (code) ? (
+            <ProjectButton
+            link={code}
+            styles="bg-background-mid hover:text-text hover:bg-highlight-bg"
+            innerText="Code"
+            >
+              <BsGithub />
+            </ProjectButton>
+          ) : <></>
+      }
     </div>
   );
 }
