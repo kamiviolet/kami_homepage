@@ -13,16 +13,6 @@ const projectList: ProjectType[] = [
     },
   },
   {
-    name: "FurryTail",
-    description: `A mini project to search for different cat breeds.`,
-    tools: ["TypeScript", "React", "Next"],
-    image: "/furrytail_dark.png",
-    url: {
-      demo: "https://furrytail.vercel.app/",
-      github: "https://github.com/kamiviolet/furrytail",
-    },
-  },
-  {
     name: "Ubiquitous Biscuit",
     description: `Inspired by Reddit, with user registration function, update, delete their profile and contribute to the community by sharing articles and comments.`,
     tools: ["JavaScript", "PostgreSQL", "React", "jest", "CSS"],
@@ -60,6 +50,15 @@ const projectList: ProjectType[] = [
     url: {
       demo: "https://cookiess-forum.vercel.app/",
       github: "https://github.com/kamiviolet/ubiquitous_biscuit_v2",
+    },
+  },
+  {
+    name: "The official website of Ai Morikawa & Gentaro Suzuki",
+    description: `An official website for a Japanese musical group with full responsiveness, designed with Figma and SEO optimised, hosted on behalf of the client.`,
+    tools: ["TypeScript", "Next", "Tailwind CSS"],
+    image: "/ai-gentaro.png",
+    url: {
+      demo: "https://aigentaro.live",
     },
   },
 ];
