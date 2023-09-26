@@ -7,7 +7,7 @@ export default function BtnWrapper({
   code,
 }: {
   demo: string;
-  code: string;
+  code: string|undefined;
 }): React.ReactNode {
   return (
     <div className="flex">
