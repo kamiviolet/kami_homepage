@@ -23,7 +23,7 @@ export default function ProjectContainer({
             loading="lazy"
             src={"/projects" + project.image}
             alt={project.name}
-            className="thumbnail web_thumbnail"
+            className="thumbnail web_thumbnail shadow-xl"
             width="350"
             height="300"
           />
