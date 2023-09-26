@@ -8,7 +8,7 @@ connectDB();
 export async function GET() {
   try {
     const projectList: ProjectType[] = await ProjectModel.find().sort({
-      projectsId: -1,
+      id: -1,
     });
     return NextResponse.json({ projectList });
   } catch (err: unknown) {
