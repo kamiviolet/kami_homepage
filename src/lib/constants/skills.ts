@@ -27,11 +27,11 @@ const skillList: SkillType[] = [
   },
   {
     name: "Vue",
-    path: "/devicons/vue.png",
+    path: "/devicons/vue.svg",
   },
   {
     name: "D3",
-    path: "/devicons/d3.png",
+    path: "/devicons/d3.svg",
   },
   {
     name: "MongoDB",
