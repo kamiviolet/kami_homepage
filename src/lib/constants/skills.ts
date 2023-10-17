@@ -26,6 +26,14 @@ const skillList: SkillType[] = [
     path: "/devicons/nextjs-original-wordmark.svg",
   },
   {
+    name: "Vue",
+    path: "/devicons/vue.png",
+  },
+  {
+    name: "D3",
+    path: "/devicons/d3.png",
+  },
+  {
     name: "MongoDB",
     path: "/devicons/mongodb-original.svg",
   },
@@ -52,7 +60,7 @@ const skillList: SkillType[] = [
   {
     name: "Styled Components",
     path: "/devicons/styled-components.png",
-  },
+  }
 ];
 
 export default skillList;
