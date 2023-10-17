@@ -11,7 +11,7 @@ const url = `mongodb+srv://${MONGODB_ID}:${MONGODB_PW}@${MONGODB_CLUSTER}.hl5lxl
 
 export default async function connectDB(): Promise<void> {
   try {
-    await mongoose.connect(url);
+    await mongoose.connect(url, {dbName: 'HomepageDB'});
     console.log("Connected successfully");
   } catch (error) {
     console.error(error);
