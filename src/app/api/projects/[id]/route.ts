@@ -7,9 +7,9 @@ connectDB();
 
 export async function GET(
   req: NextRequest,
-  context: { params: { id: ObjectId } }
+  {params}: { params: Promise<{ id: ObjectId }> }
 ) {
-  const id = +context.params.id;
+  let {id} = await params;
   try {
     const project = await ProjectModel.findOne({ id });
     return NextResponse.json({ project });
@@ -20,11 +20,9 @@ export async function GET(
 
 export async function DELETE(
   req: NextRequest,
-  context: {
-    params: { id: ObjectId };
-  }
+  {params}: { params: Promise<{ id: ObjectId }> }
 ) {
-  const id = +context.params.id;
+  let {id} = await params;
   try {
     await ProjectModel.deleteOne({ id });
     return NextResponse.json({
@@ -37,9 +35,9 @@ export async function DELETE(
 
 export async function PATCH(
   req: NextRequest,
-  context: { params: { id: ObjectId } }
+  {params}: { params: Promise<{ id: ObjectId }> }
 ) {
-  const id = +context.params.id;
+  let {id} = await params;
   const updatedBody = await req.json();
   try {
     const updatedProject = await ProjectModel.updateOne(
