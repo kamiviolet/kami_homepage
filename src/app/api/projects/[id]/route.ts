@@ -11,7 +11,7 @@ export async function GET(
 ) {
   let {id} = await params;
   try {
-    const project = await ProjectModel.findOne({ id });
+    const project = await ProjectModel.findOne({ id: +id });
     return NextResponse.json({ project });
   } catch (err) {
     console.error(err);
@@ -24,7 +24,7 @@ export async function DELETE(
 ) {
   let {id} = await params;
   try {
-    await ProjectModel.deleteOne({ id });
+    await ProjectModel.deleteOne({ id: +id });
     return NextResponse.json({
       message: `Project ${id} is deleted successfully`,
     });
@@ -41,7 +41,7 @@ export async function PATCH(
   const updatedBody = await req.json();
   try {
     const updatedProject = await ProjectModel.updateOne(
-      { id },
+      { id: +id },
       { ...updatedBody }
     );
     return NextResponse.json({ updatedProject });

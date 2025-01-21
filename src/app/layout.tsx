@@ -1,5 +1,5 @@
 import "./globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { Providers } from "./themeProvider";
 import Footer from "./_footer";
@@ -11,10 +11,13 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://kamiviolet.site"),
   title: "Kami's Hompage",
+
   description:
     "The collection of my application projects, my illustrations, and articles. My portfolio as developer. My personal stash for the treasures I gathered in this adventurous life.",
+
   generator: "Next.js",
   creator: "Kami Lam",
+
   keywords: [
     "homepage",
     "portfolio",
@@ -23,15 +26,13 @@ export const metadata: Metadata = {
     "tech writer",
     "personal",
   ],
+
   category: "technology",
+
   openGraph: {
     images: "/preview.png",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
+
   robots: {
     index: false,
     follow: true,
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
+  }
 };
 
 export default function RootLayout({
@@ -65,3 +66,9 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1
+};

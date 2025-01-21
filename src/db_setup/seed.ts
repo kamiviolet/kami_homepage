@@ -10,9 +10,9 @@ import PostType from "@/types/post.type";
 import TagType from "@/types/tag.type";
 import ProjectType from "@/types/project.type";
 
-connectDB();
-
 const seedDB = async (): Promise<void> => {
+  await connectDB();
+
   await PostModel.deleteMany({});
   await TagModel.deleteMany({});
   await ProjectModel.deleteMany({});

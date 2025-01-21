@@ -10,7 +10,8 @@ const styles = {
 };
 
 export default async function Projects() {
-  const projectList: ProjectType[] = await fetchAllProjectsFromDb();
+  try {
+    const projectList: ProjectType[] = await fetchAllProjectsFromDb();
 
   return (
     <section className={styles.project_section}>
@@ -27,5 +28,7 @@ export default async function Projects() {
         })}
       </div>
     </section>
-  );
+  );} catch (e) {
+    console.log("Err", e);
+  }
 }
